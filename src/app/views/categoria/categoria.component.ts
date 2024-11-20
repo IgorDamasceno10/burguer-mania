@@ -30,22 +30,22 @@ export class CategoriaComponent implements OnInit {
       items: [          // Lista de itens dentro da categoria
         {
           title: 'X-Alface-Premium',
-          description: 'Delicioso hambúrguer vegano',
-          description_text: 'Delicioso hambúrguer vegano',
+          description: 'Delicioso hambúrguer para os amantes de vegetais!',
+          description_text: 'O X-Tomate é uma opção deliciosa e suculenta para os amantes de hambúrgueres frescos e leves. Com um hambúrguer perfeitamente grelhado, servido em um pão macio e recheado com generosas fatias de tomate fresquinho, alface crocante e uma camada suave de maionese. Este sanduíche traz o sabor intenso e refrescante do tomate, que combina perfeitamente com o queijo derretido e a crocância do pão. Simples, mas cheio de sabor, o X-Tomate é a escolha ideal para quem aprecia um hambúrguer clássico e saboroso.',
           imageUrl: '/burgersCat.png',
           price: '35,00 R$'
         },
         {
           title: 'X-Tomate',
-          description: 'Hambúrguer com muito tomate',
-          description_text: 'Delicioso hambúrguer vegano',
+          description: 'Hambúrguer para quem ama comer um tomate!',
+          description_text: 'O X-Tomate é uma opção deliciosa e suculenta para os amantes de hambúrgueres frescos e leves. Com um hambúrguer perfeitamente grelhado, servido em um pão macio e recheado com generosas fatias de tomate fresquinho, alface crocante e uma camada suave de maionese. Este sanduíche traz o sabor intenso e refrescante do tomate, que combina perfeitamente com o queijo derretido e a crocância do pão. Simples, mas cheio de sabor, o X-Tomate é a escolha ideal para quem aprecia um hambúrguer clássico e saboroso.',
           imageUrl: '/burgersCat.png',
           price: '35,00 R$'
         },
         {
           title: 'X-Frutas',
-          description: 'Pão, Hambúrguer, alface, tomate, queijo e maionese',
-          description_text: 'Delicioso hambúrguer vegano',
+          description: 'Hamburguer tropical para veganos',
+          description_text: 'O X-Frutas é uma opção refrescante e saborosa que combina o melhor dos hambúrgueres com o toque natural das frutas. Preparado com um hambúrguer suculento e fresco, acompanhado de uma mistura de frutas selecionadas como abacaxi, manga e morango, ele é uma explosão de sabores tropicais. Servido em um pão macio, com alface crocante, tomate e uma generosa camada de maionese, o X-Frutas é perfeito para quem busca uma refeição leve, mas ao mesmo tempo, cheia de sabor e frescor.',
           imageUrl: '/burgersCat.png',
           price: '35,00 R$'
         },
