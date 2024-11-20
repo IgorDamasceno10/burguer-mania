@@ -1,0 +1,27 @@
+<!-- Componente Header -->
+<app-header></app-header>
+
+<!-- Título da página -->
+<h2 class="title">CARDÁPIO</h2>
+
+<!-- Exibição dos itens do menu -->
+<div class="menu">
+  <!-- Laço para exibir itens do cardápio -->
+  <app-card
+    *ngFor="let item of (showAll ? menuItems : menuItems.slice(0, 3))"
+    [title]="item.title"
+    [description]="item.description"
+    [imageUrl]="item.imageUrl"
+    (click)="viewCategory(item.title)">
+  </app-card>
+</div>
+
+<!-- Botão para alternar entre ver mais ou menos -->
+<div class="button-container">
+  <app-button 
+    [label]="showAll ? 'MOSTRAR MENOS' : 'VER CARDÁPIO COMPLETO'" 
+    type="filled" 
+    size="large" 
+    (click)="toggleMenu()">
+  </app-button>
+</div>

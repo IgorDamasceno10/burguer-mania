@@ -1,0 +1,50 @@
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px; /* Um pouco mais de espaço entre os campos */
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 8px; /* Um pequeno ajuste no espaço entre o rótulo e o campo */
+  color: #444; /* Leve ajuste na cor do rótulo */
+  font-size: 17px; /* Ajuste na fonte do label */
+  transition: color 0.3s ease; /* Transição suave na cor do label */
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 12px; /* Aumentando um pouco o padding para mais espaço */
+  border: 1px solid #ddd; /* Borda mais suave e clara */
+  border-radius: 6px; /* Bordas mais arredondadas para um visual mais moderno */
+  font-size: 16px;
+  font-family: 'Helvetica Neue', sans-serif; /* Alterando para uma fonte mais moderna */
+  background-color: #f9f9f9; /* Fundo mais claro para os inputs */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transições mais suaves */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border: 1px solid #5cb85c; /* Cor de foco suave (verde) */
+  box-shadow: 0 0 6px rgba(92, 184, 92, 0.4); /* Sombra suave em verde */
+  outline: none; /* Remove o outline padrão */
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover {
+  border-color: #bbb; /* Borda levemente mais escura no hover */
+}
+
+@media (max-width: 768px) { /* Tablets */
+  input[type="text"],
+  input[type="number"] {
+    width: 80%; /* Ajuste para tablets */
+  }
+}
+
+@media (max-width: 576px) { /* Celulares */
+  input[type="text"],
+  input[type="number"] {
+    width: 80%; /* Ajuste para celulares */
+  }
+}

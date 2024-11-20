@@ -3,11 +3,18 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "burger-mania": {
+    "burgermania-frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "standalone": false
+        },
+        "@schematics/angular:directive": {
+          "standalone": false
+        },
+        "@schematics/angular:pipe": {
+          "standalone": false
         }
       },
       "root": "",
@@ -17,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/burger-mania",
+            "outputPath": "dist/burgermania-frontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "burger-mania:build:production"
+              "buildTarget": "burgermania-frontend:build:production"
             },
             "development": {
-              "buildTarget": "burger-mania:build:development"
+              "buildTarget": "burgermania-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -103,5 +110,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "0bb92bc4-21c4-49be-92ea-0e89528d216e"
   }
 }

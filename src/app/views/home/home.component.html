@@ -1,0 +1,21 @@
+<app-header></app-header> <!-- Componente do cabeçalho -->
+
+<div class="main-content">
+  <img class="burguer-image" src="/burgers.png" alt="Hambúrgueres" /> <!-- Imagem dos hambúrgueres -->
+
+  <div>
+    <!-- Botão para fazer pedido, que chama a função 'navigateTo' para ir até a página 'pedido' -->
+    <app-button
+      label="Fazer pedido"
+      type="filled"
+      (click)="navigateTo('pedido')">
+    </app-button>
+
+    <!-- Botão para acessar o cardápio, que chama a função 'navigateTo' para ir até a página 'cardapio' -->
+    <app-button
+      label="Acessar cardápio"
+      type="outlined"
+      (click)="navigateTo('cardapio')">
+    </app-button>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<app-header></app-header>  <!-- Exibe o cabeçalho do site -->
+
+<!-- Título da categoria atual, exibido dinamicamente -->
+<h2 class="title">{{ categoriaAtual?.name }}</h2>
+
+<!-- Verifica se a categoria está carregada, caso contrário exibe uma mensagem de erro -->
+<div *ngIf="categoriaAtual; else notFound" class="menuCategoria">
+  <!-- Exibe os itens da categoria com um *ngFor, iterando sobre os itens da categoria atual -->
+  <app-card
+    *ngFor="let item of categoriaAtual.items"
+    [title]="item.title"
+    [description]="item.description"
+    [imageUrl]="item.imageUrl"
+    (click)="navigateToProduct(item.title)">  <!-- Ao clicar no item, navega para a página do produto -->
+  </app-card>
+</div>
+
+<!-- Template de fallback caso a categoria não seja encontrada -->
+<ng-template #notFound>
+  <p>Categoria não encontrada.</p>  <!-- Mensagem exibida caso a categoria não exista -->
+</ng-template>
+
+<!-- Botão para alternar entre exibir todos os itens ou um número limitado -->
+<div class="button-container">
+  <app-button [label]="showAll ? 'MOSTRAR MENOS' : 'VER CARDÁPIO COMPLETO'" 
+              type="filled" size="large" 
+              (click)="toggleMenu()"></app-button>
+</div>
