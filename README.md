@@ -15,9 +15,17 @@ Este projeto foi desenvolvido como parte da **Residência TIC36**, na área de *
 ## Funcionalidades
 
 - **Página Inicial**: Exibe imagens dos hambúrgueres e oferece botões para fazer o pedido ou acessar o cardápio.
+  ![Imagem da Página Inicial](./public/home.png)
+  
 - **Cardápio**: Exibe as categorias de hambúrgueres e permite visualizar detalhes de cada produto.
+  ![Imagem do Cardápio](./public/cadarpio.png)
+
 - **Detalhes do Produto**: Cada hambúrguer tem uma página com informações detalhadas, como descrição, preço e opções de compra.
+  ![Imagem de Descrição do Produto](./public/descricao.png)
+  
 - **Pedido**: Permite ao usuário selecionar os produtos e quantidades, adicionar observações e finalizar o pedido.
+  ![Imagem do Pedido](./public/pedido.png)
+
 - **Roteamento**: O aplicativo utiliza o Angular Router para navegação entre as páginas, como o cardápio, detalhes dos produtos e o formulário de pedido.
 
 ## Estrutura do Projeto
